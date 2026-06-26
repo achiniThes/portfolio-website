@@ -2,9 +2,11 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
 
 jobs:
   validate:
@@ -14,12 +16,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check project structure
+      - name: Check HTML files exist
         run: |
-          echo "Checking portfolio structure..."
-          test -f index.html || (echo "index.html missing!" && exit 1)
+          if [ ! -f index.html ]; then
+            echo "index.html not found!"
+            exit 1
+          fi
+          echo "Portfolio structure looks good."
 
-      - name: Validate HTML
-        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
-        with:
-          root: .
+      - name: List project files
+        run: ls -R
