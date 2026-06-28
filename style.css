@@ -296,8 +296,22 @@ button:hover{
     background:#9333ea;
 }
 footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-}    
+    text-align:center;
+    padding:20px;
+    background:#020617;
+}   
+.social-links{
+    margin-top:10px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+.social-links a{
+    color:#c084fc;
+    font-size:1.5rem;
+    transition:0.3s;
+}
+.social-links a:hover{
+    color:#a855f7;
+    transform:translateY(-3px);
+}
