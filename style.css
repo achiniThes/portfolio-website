@@ -7,6 +7,7 @@ body{
     margin:0;
     padding:0;
     box-sizing:border-box;   
+    font-family:'Poppins', sans-serif;
 }
 nav{
     position:fixed;
@@ -245,4 +246,41 @@ section h2{
 .actions{
     width:70%;
 }
-
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.project-card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    transition:0.3s;  
+}
+.project-card:hover{
+    transform:translateY(-8px);
+}
+.project-icon{
+    font-size:2rem;
+    margin-bottom:10px;
+    color:#a855f7;
+}
+.project-title{
+    margin-bottom:10px;
+}
+.project-desc{
+    color:#cbd5e1;
+    font-size:0.95rem;
+    margin-bottom:15px;
+}
+.project-stack{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+}
+.p-badge{
+    background:#312e81;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:0.75rem;
+}
