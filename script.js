@@ -72,3 +72,4 @@ const skillObserver = new IntersectionObserver((entries) => {
 skillBars.forEach(bar => {
     skillObserver.observe(bar);
 });
+
