@@ -284,3 +284,35 @@ section h2{
     border-radius:20px;
     font-size:0.75rem;
 }
+form{
+    max-width:600px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+input, textarea{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#1e293b;
+    color:white;
+}
+button{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#a855f7;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+button:hover{
+    background:#9333ea;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}    
