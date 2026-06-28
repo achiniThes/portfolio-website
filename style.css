@@ -219,32 +219,17 @@ section h2{
     );
     transition:width 2s ease;
 }
-.html{
-    width:90%;
-}
-.css{
-    width:80%;
-}
-.js{
-    width:75%;
-}
-.python{
-    width:75%;
-}
-.cSharp{
-    width:70%;
-}
-.java{
-    width:80%;
-}
-.sql{
-    width:75%;
-}
-.git{
-    width:75%;
-}
+
+.html,
+.css,
+.js,
+.python,
+.cSharp,
+.java,
+.sql,
+.git,
 .actions{
-    width:70%;
+    width:0%;
 }
 .projects-grid{
     display:grid;

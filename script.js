@@ -33,3 +33,42 @@ function typeEffect() {
     }
 }
 typeEffect();
+
+const skillBars = document.querySelectorAll(".progress");
+const skillObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            if(entry.target.classList.contains("html"))
+                entry.target.style.width = "90%";
+
+            if(entry.target.classList.contains("css"))
+                entry.target.style.width = "80%";
+
+            if(entry.target.classList.contains("js"))
+                entry.target.style.width = "75%";
+
+            if(entry.target.classList.contains("python"))
+                entry.target.style.width = "75%";
+
+            if(entry.target.classList.contains("cSharp"))
+                entry.target.style.width = "70%";
+
+            if(entry.target.classList.contains("java"))
+                entry.target.style.width = "80%";
+
+            if(entry.target.classList.contains("sql"))
+                entry.target.style.width = "75%";
+
+            if(entry.target.classList.contains("git"))
+                entry.target.style.width = "75%";
+
+            if(entry.target.classList.contains("actions"))
+                entry.target.style.width = "70%";
+        }
+    });
+},{ threshold:0.5 });
+
+skillBars.forEach(bar => {
+    skillObserver.observe(bar);
+});
