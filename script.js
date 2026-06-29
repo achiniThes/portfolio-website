@@ -85,3 +85,30 @@ themeToggle.addEventListener("click", () => {
     }
 
 });
+const hiddenElements = document.querySelectorAll(".hidden");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{
+    threshold:0.2
+});
+
+hiddenElements.forEach(el => {
+    observer.observe(el);
+});
+
+document.addEventListener("mousemove", (e) => {
+    const cursor = document.querySelector(".cursor");
+    const dot = document.querySelector(".cursor-dot");
+
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
+
+    dot.style.left = e.clientX + "px";
+    dot.style.top = e.clientY + "px";
+});
+

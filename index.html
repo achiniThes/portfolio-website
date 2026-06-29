@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 
 <body>
@@ -24,6 +25,8 @@
         </ul>
         <button id="theme-toggle">🌙</button>
     </nav>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
 
     <section id="home" class="hero">
         <div class="hero-content">
@@ -44,7 +47,7 @@
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="hidden">
         <div class="section-tag">Get To Know Me</div>
 
     <h2 class="section-heading">
@@ -131,8 +134,11 @@
     </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
+    <section id="education" class="hidden">
+    <div class="section-tag">My Journey</div>
+    <h2 class="section-heading">
+        Education <span>Background</span>
+    </h2>
 
     <div class="education-card">
         <h3>Bsc Physical Science-ICT</h3>
@@ -150,10 +156,8 @@
     </div>
     </section>
 
-    <section id="skills">
-        <div class="section-tag">
-        My Expertise
-    </div>
+    <section id="skills" class="hidden">
+        <div class="section-tag">My Expertise</div>
     <h2 class="section-heading">
         Technical <span>Skills</span>
     </h2>
@@ -165,7 +169,8 @@
     <div class="skills-container">
         <div class="skill-card">
             <div class="skill-header">
-                <span>HTML</span>
+                <i class="devicon-html5-plain colored"></i> HTML
+                
                 <span>90%</span>
             </div>
             <div class="progress-bar">
@@ -175,7 +180,7 @@
 
         <div class="skill-card">
             <div class="skill-header">
-                <span>CSS</span>
+                <i class="devicon-css3-plain colored"></i> CSS
                 <span>80%</span>
             </div>
             <div class="progress-bar">
@@ -185,7 +190,7 @@
 
         <div class="skill-card">
             <div class="skill-header">
-                <span>JavaScript</span>
+                <i class="devicon-javascript-plain colored"></i> JavaScript
                 <span>75%</span>
             </div>
             <div class="progress-bar">
@@ -195,7 +200,7 @@
 
         <div class="skill-card">
             <div class="skill-header">
-                <span>Python</span>
+                <i class="devicon-python-plain colored"></i> Python
                 <span>75%</span>
             </div>
             <div class="progress-bar">
@@ -205,7 +210,7 @@
         
         <div class="skill-card">
             <div class="skill-header">
-                <span>C#</span>
+                <i class="devicon-csharp-plain colored"></i> C#
                 <span>70%</span>
             </div>
              <div class="progress-bar">
@@ -215,7 +220,7 @@
 
         <div class="skill-card">
             <div class="skill-header">
-                <span>Java</span>
+                <i class="devicon-java-plain colored"></i> Java
                 <span>80%</span>
             </div>
             <div class="progress-bar">
@@ -225,7 +230,7 @@
     
         <div class="skill-card">
             <div class="skill-header">
-                <span>SQL</span>
+                <i class="devicon-mysql-plain colored"></i> SQL
                 <span>75%</span>
             </div>
             <div class="progress-bar">
@@ -235,7 +240,7 @@
 
         <div class="skill-card">
             <div class="skill-header">
-                <span>Git & GitHub</span>
+                <i class="devicon-git-plain colored"></i> Git & GitHub
                 <span>75%</span>
             </div>
             <div class="progress-bar">
@@ -245,7 +250,7 @@
 
         <div class="skill-card">
             <div class="skill-header">
-                <span>GitHub Actions</span>
+                <i class="fa-solid fa-gears" style="color:#6e40c9;"></i> GitHub Actions
                 <span>70%</span>
             </div>
             <div class="progress-bar">
@@ -255,7 +260,7 @@
     </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="hidden">
         <div class="section-tag">My Work</div>
     <h2 class="section-heading">
         Latest <span>Projects</span>
@@ -329,7 +334,7 @@
     </div>
     </section>
 
-    <section id="certificates">
+    <section id="certificates" class="hidden">
     <div class="section-tag">Achievements</div>
     <h2 class="section-heading">
         My <span>Certificates</span></h2>
@@ -358,7 +363,7 @@
     </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="hidden">
         <h2>Contact Me</h2>
 
         <form>
